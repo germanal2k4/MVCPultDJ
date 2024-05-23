@@ -8,7 +8,8 @@
 
 class ConsoleBPMView : public Updater {
   Q_OBJECT
-
+  Q_PLUGIN_METADATA(IID UpdaterInterface_iid)
+  Q_INTERFACES(Updater)
 public:
   explicit ConsoleBPMView(QObject *parent = nullptr);
   void show();

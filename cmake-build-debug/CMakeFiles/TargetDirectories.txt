@@ -1,3 +1,5 @@
+/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/DisplayBPMView.dir
+/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/ConsoleBPMView.dir
 /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/MVCPultDJ.dir
 /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/rebuild_cache.dir
@@ -5,5 +7,9 @@
 /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/install.dir
 /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/install/local.dir
 /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/install/strip.dir
+/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/DisplayBPMView_autogen_timestamp_deps.dir
+/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/DisplayBPMView_autogen.dir
+/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/ConsoleBPMView_autogen_timestamp_deps.dir
+/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/ConsoleBPMView_autogen.dir
 /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/MVCPultDJ_autogen_timestamp_deps.dir
 /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/CMakeFiles/MVCPultDJ_autogen.dir

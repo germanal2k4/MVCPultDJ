@@ -18,6 +18,9 @@ DisplayBPMView::DisplayBPMView(QObject *parent) : Updater(parent) {
   m_widget.setValue(120);
 }
 
+
+
+
 void DisplayBPMView::updateBPM(int bpm) { m_widget.setValue(bpm); }
 
 void DisplayBPMView::show() { m_widget.show(); }

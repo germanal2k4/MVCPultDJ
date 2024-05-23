@@ -18,16 +18,25 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
 )
-
+add_library(DisplayBPMView SHARED
+        displaybpmview.cpp
+        displaybpmview.h
+        updater.h
+        )
+add_library(ConsoleBPMView SHARED
+        consolebpmview.cpp
+        consolebpmview.h
+        updater.h
+        )
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(MVCPultDJ
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         bpmmodel.h bpmmodel.cpp
         bpmcontroller.h bpmcontroller.cpp
-        displaybpmview.h displaybpmview.cpp
+            displaybpmview.h displaybpmview.cpp
         controlbpmview.h controlbpmview.cpp
-        consolebpmview.h consolebpmview.cpp
+            consolebpmview.h consolebpmview.cpp
         updater.h updater.cpp
 
     )

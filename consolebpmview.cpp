@@ -13,3 +13,4 @@ void ConsoleBPMView::displayBPMInConsole() {
   std::string bpmStr(currentBPM, '*');
   std::cout << "[" << bpmStr << "]" << std::endl;
 }
+
