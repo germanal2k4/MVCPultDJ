@@ -47,18 +47,18 @@ cmake_ninja_workdir = /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/
 build cmake_object_order_depends_target_DisplayBPMView: phony || DisplayBPMView_autogen DisplayBPMView_autogen/mocs_compilation.cpp DisplayBPMView_autogen/timestamp DisplayBPMView_autogen_timestamp_deps
 
 build CMakeFiles/DisplayBPMView.dir/DisplayBPMView_autogen/mocs_compilation.cpp.o: CXX_COMPILER__DisplayBPMView_Debug /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/DisplayBPMView_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_DisplayBPMView
-  DEFINES = -DDisplayBPMView_EXPORTS
+  DEFINES = -DDisplayBPMView_EXPORTS -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/DisplayBPMView.dir/DisplayBPMView_autogen/mocs_compilation.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fPIC -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/DisplayBPMView_autogen/include
+  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/DisplayBPMView_autogen/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/lib/QtCore.framework/Headers -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/DisplayBPMView.dir
   OBJECT_FILE_DIR = CMakeFiles/DisplayBPMView.dir/DisplayBPMView_autogen
 
 build CMakeFiles/DisplayBPMView.dir/displaybpmview.cpp.o: CXX_COMPILER__DisplayBPMView_Debug /Users/germanalbershteyn/MVCPultDJ/displaybpmview.cpp || cmake_object_order_depends_target_DisplayBPMView
-  DEFINES = -DDisplayBPMView_EXPORTS
+  DEFINES = -DDisplayBPMView_EXPORTS -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/DisplayBPMView.dir/displaybpmview.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fPIC -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/DisplayBPMView_autogen/include
+  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/DisplayBPMView_autogen/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/lib/QtCore.framework/Headers -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/DisplayBPMView.dir
   OBJECT_FILE_DIR = CMakeFiles/DisplayBPMView.dir
 
@@ -70,10 +70,12 @@ build CMakeFiles/DisplayBPMView.dir/displaybpmview.cpp.o: CXX_COMPILER__DisplayB
 #############################################
 # Link the shared library libDisplayBPMView.dylib
 
-build libDisplayBPMView.dylib: CXX_SHARED_LIBRARY_LINKER__DisplayBPMView_Debug CMakeFiles/DisplayBPMView.dir/DisplayBPMView_autogen/mocs_compilation.cpp.o CMakeFiles/DisplayBPMView.dir/displaybpmview.cpp.o || DisplayBPMView_autogen DisplayBPMView_autogen_timestamp_deps
+build libDisplayBPMView.dylib: CXX_SHARED_LIBRARY_LINKER__DisplayBPMView_Debug CMakeFiles/DisplayBPMView.dir/DisplayBPMView_autogen/mocs_compilation.cpp.o CMakeFiles/DisplayBPMView.dir/displaybpmview.cpp.o | /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore || DisplayBPMView_autogen DisplayBPMView_autogen_timestamp_deps
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5
   INSTALLNAME_DIR = @rpath/
   LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets  /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui  /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal
+  LINK_PATH = -F/opt/homebrew/lib
   OBJECT_DIR = CMakeFiles/DisplayBPMView.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -92,18 +94,18 @@ build libDisplayBPMView.dylib: CXX_SHARED_LIBRARY_LINKER__DisplayBPMView_Debug C
 build cmake_object_order_depends_target_ConsoleBPMView: phony || ConsoleBPMView_autogen ConsoleBPMView_autogen/mocs_compilation.cpp ConsoleBPMView_autogen/timestamp ConsoleBPMView_autogen_timestamp_deps
 
 build CMakeFiles/ConsoleBPMView.dir/ConsoleBPMView_autogen/mocs_compilation.cpp.o: CXX_COMPILER__ConsoleBPMView_Debug /Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/ConsoleBPMView_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_ConsoleBPMView
-  DEFINES = -DConsoleBPMView_EXPORTS
+  DEFINES = -DConsoleBPMView_EXPORTS -DQT_CORE_LIB
   DEP_FILE = CMakeFiles/ConsoleBPMView.dir/ConsoleBPMView_autogen/mocs_compilation.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fPIC -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/ConsoleBPMView_autogen/include
+  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/ConsoleBPMView_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/ConsoleBPMView.dir
   OBJECT_FILE_DIR = CMakeFiles/ConsoleBPMView.dir/ConsoleBPMView_autogen
 
 build CMakeFiles/ConsoleBPMView.dir/consolebpmview.cpp.o: CXX_COMPILER__ConsoleBPMView_Debug /Users/germanalbershteyn/MVCPultDJ/consolebpmview.cpp || cmake_object_order_depends_target_ConsoleBPMView
-  DEFINES = -DConsoleBPMView_EXPORTS
+  DEFINES = -DConsoleBPMView_EXPORTS -DQT_CORE_LIB
   DEP_FILE = CMakeFiles/ConsoleBPMView.dir/consolebpmview.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fPIC -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/ConsoleBPMView_autogen/include
+  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/ConsoleBPMView_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include
   OBJECT_DIR = CMakeFiles/ConsoleBPMView.dir
   OBJECT_FILE_DIR = CMakeFiles/ConsoleBPMView.dir
 
@@ -115,10 +117,12 @@ build CMakeFiles/ConsoleBPMView.dir/consolebpmview.cpp.o: CXX_COMPILER__ConsoleB
 #############################################
 # Link the shared library libConsoleBPMView.dylib
 
-build libConsoleBPMView.dylib: CXX_SHARED_LIBRARY_LINKER__ConsoleBPMView_Debug CMakeFiles/ConsoleBPMView.dir/ConsoleBPMView_autogen/mocs_compilation.cpp.o CMakeFiles/ConsoleBPMView.dir/consolebpmview.cpp.o || ConsoleBPMView_autogen ConsoleBPMView_autogen_timestamp_deps
+build libConsoleBPMView.dylib: CXX_SHARED_LIBRARY_LINKER__ConsoleBPMView_Debug CMakeFiles/ConsoleBPMView.dir/ConsoleBPMView_autogen/mocs_compilation.cpp.o CMakeFiles/ConsoleBPMView.dir/consolebpmview.cpp.o | /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore || ConsoleBPMView_autogen ConsoleBPMView_autogen_timestamp_deps
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5
   INSTALLNAME_DIR = @rpath/
   LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration
+  LINK_PATH = -F/opt/homebrew/lib
   OBJECT_DIR = CMakeFiles/ConsoleBPMView.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -176,33 +180,9 @@ build CMakeFiles/MVCPultDJ.dir/bpmcontroller.cpp.o: CXX_COMPILER__MVCPultDJ_Debu
   OBJECT_DIR = CMakeFiles/MVCPultDJ.dir
   OBJECT_FILE_DIR = CMakeFiles/MVCPultDJ.dir
 
-build CMakeFiles/MVCPultDJ.dir/displaybpmview.cpp.o: CXX_COMPILER__MVCPultDJ_Debug /Users/germanalbershteyn/MVCPultDJ/displaybpmview.cpp || cmake_object_order_depends_target_MVCPultDJ
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/MVCPultDJ.dir/displaybpmview.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/MVCPultDJ_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/lib/QtGui.framework/Headers
-  OBJECT_DIR = CMakeFiles/MVCPultDJ.dir
-  OBJECT_FILE_DIR = CMakeFiles/MVCPultDJ.dir
-
 build CMakeFiles/MVCPultDJ.dir/controlbpmview.cpp.o: CXX_COMPILER__MVCPultDJ_Debug /Users/germanalbershteyn/MVCPultDJ/controlbpmview.cpp || cmake_object_order_depends_target_MVCPultDJ
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/MVCPultDJ.dir/controlbpmview.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/MVCPultDJ_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/lib/QtGui.framework/Headers
-  OBJECT_DIR = CMakeFiles/MVCPultDJ.dir
-  OBJECT_FILE_DIR = CMakeFiles/MVCPultDJ.dir
-
-build CMakeFiles/MVCPultDJ.dir/consolebpmview.cpp.o: CXX_COMPILER__MVCPultDJ_Debug /Users/germanalbershteyn/MVCPultDJ/consolebpmview.cpp || cmake_object_order_depends_target_MVCPultDJ
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/MVCPultDJ.dir/consolebpmview.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/MVCPultDJ_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/lib/QtGui.framework/Headers
-  OBJECT_DIR = CMakeFiles/MVCPultDJ.dir
-  OBJECT_FILE_DIR = CMakeFiles/MVCPultDJ.dir
-
-build CMakeFiles/MVCPultDJ.dir/updater.cpp.o: CXX_COMPILER__MVCPultDJ_Debug /Users/germanalbershteyn/MVCPultDJ/updater.cpp || cmake_object_order_depends_target_MVCPultDJ
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/MVCPultDJ.dir/updater.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fcolor-diagnostics -std=gnu++17
   INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/MVCPultDJ_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/MVCPultDJ.dir
@@ -216,7 +196,7 @@ build CMakeFiles/MVCPultDJ.dir/updater.cpp.o: CXX_COMPILER__MVCPultDJ_Debug /Use
 #############################################
 # Link the executable MVCPultDJ.app/Contents/MacOS/MVCPultDJ
 
-build MVCPultDJ.app/Contents/MacOS/MVCPultDJ: CXX_EXECUTABLE_LINKER__MVCPultDJ_Debug CMakeFiles/MVCPultDJ.dir/MVCPultDJ_autogen/mocs_compilation.cpp.o CMakeFiles/MVCPultDJ.dir/main.cpp.o CMakeFiles/MVCPultDJ.dir/mainwindow.cpp.o CMakeFiles/MVCPultDJ.dir/bpmmodel.cpp.o CMakeFiles/MVCPultDJ.dir/bpmcontroller.cpp.o CMakeFiles/MVCPultDJ.dir/displaybpmview.cpp.o CMakeFiles/MVCPultDJ.dir/controlbpmview.cpp.o CMakeFiles/MVCPultDJ.dir/consolebpmview.cpp.o CMakeFiles/MVCPultDJ.dir/updater.cpp.o | /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore || MVCPultDJ_autogen MVCPultDJ_autogen_timestamp_deps
+build MVCPultDJ.app/Contents/MacOS/MVCPultDJ: CXX_EXECUTABLE_LINKER__MVCPultDJ_Debug CMakeFiles/MVCPultDJ.dir/MVCPultDJ_autogen/mocs_compilation.cpp.o CMakeFiles/MVCPultDJ.dir/main.cpp.o CMakeFiles/MVCPultDJ.dir/mainwindow.cpp.o CMakeFiles/MVCPultDJ.dir/bpmmodel.cpp.o CMakeFiles/MVCPultDJ.dir/bpmcontroller.cpp.o CMakeFiles/MVCPultDJ.dir/controlbpmview.cpp.o | /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore || MVCPultDJ_autogen MVCPultDJ_autogen_timestamp_deps
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets  /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui  /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal
   LINK_PATH = -F/opt/homebrew/lib
@@ -361,7 +341,7 @@ build MVCPultDJ_autogen/timestamp MVCPultDJ_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Phony custom command for CMakeFiles/DisplayBPMView_autogen_timestamp_deps
 
-build CMakeFiles/DisplayBPMView_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/DisplayBPMView_autogen_timestamp_deps: phony /opt/homebrew/share/qt/libexec/moc /opt/homebrew/share/qt/libexec/uic
+build CMakeFiles/DisplayBPMView_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/DisplayBPMView_autogen_timestamp_deps: phony /opt/homebrew/share/qt/libexec/moc /opt/homebrew/share/qt/libexec/uic /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
 
 
 #############################################
@@ -373,7 +353,7 @@ build CMakeFiles/DisplayBPMView_autogen DisplayBPMView_autogen/include/ui_mainwi
 #############################################
 # Phony custom command for CMakeFiles/ConsoleBPMView_autogen_timestamp_deps
 
-build CMakeFiles/ConsoleBPMView_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/ConsoleBPMView_autogen_timestamp_deps: phony /opt/homebrew/share/qt/libexec/moc /opt/homebrew/share/qt/libexec/uic
+build CMakeFiles/ConsoleBPMView_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/ConsoleBPMView_autogen_timestamp_deps: phony /opt/homebrew/share/qt/libexec/moc /opt/homebrew/share/qt/libexec/uic /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 
 
 #############################################

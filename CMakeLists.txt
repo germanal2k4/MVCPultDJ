@@ -28,17 +28,15 @@ add_library(ConsoleBPMView SHARED
         consolebpmview.h
         updater.h
         )
+
+
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(MVCPultDJ
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         bpmmodel.h bpmmodel.cpp
         bpmcontroller.h bpmcontroller.cpp
-            displaybpmview.h displaybpmview.cpp
         controlbpmview.h controlbpmview.cpp
-            consolebpmview.h consolebpmview.cpp
-        updater.h updater.cpp
-
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET MVCPultDJ APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -59,7 +57,8 @@ else()
 endif()
 
 target_link_libraries(MVCPultDJ PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-
+target_link_libraries(DisplayBPMView PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(ConsoleBPMView PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.

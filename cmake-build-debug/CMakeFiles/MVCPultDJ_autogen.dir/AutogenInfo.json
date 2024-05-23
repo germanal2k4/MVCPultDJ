@@ -364,33 +364,15 @@
 			null
 		],
 		[
-			"/Users/germanalbershteyn/MVCPultDJ/consolebpmview.h",
-			"MU",
-			"EWIEGA46WW/moc_consolebpmview.cpp",
-			null
-		],
-		[
 			"/Users/germanalbershteyn/MVCPultDJ/controlbpmview.h",
 			"MU",
 			"EWIEGA46WW/moc_controlbpmview.cpp",
 			null
 		],
 		[
-			"/Users/germanalbershteyn/MVCPultDJ/displaybpmview.h",
-			"MU",
-			"EWIEGA46WW/moc_displaybpmview.cpp",
-			null
-		],
-		[
 			"/Users/germanalbershteyn/MVCPultDJ/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
-			"/Users/germanalbershteyn/MVCPultDJ/updater.h",
-			"MU",
-			"EWIEGA46WW/moc_updater.cpp",
 			null
 		]
 	],
@@ -458,12 +440,9 @@
 	[
 		[ "/Users/germanalbershteyn/MVCPultDJ/bpmcontroller.cpp", "MU", null ],
 		[ "/Users/germanalbershteyn/MVCPultDJ/bpmmodel.cpp", "MU", null ],
-		[ "/Users/germanalbershteyn/MVCPultDJ/consolebpmview.cpp", "MU", null ],
 		[ "/Users/germanalbershteyn/MVCPultDJ/controlbpmview.cpp", "MU", null ],
-		[ "/Users/germanalbershteyn/MVCPultDJ/displaybpmview.cpp", "MU", null ],
 		[ "/Users/germanalbershteyn/MVCPultDJ/main.cpp", "MU", null ],
-		[ "/Users/germanalbershteyn/MVCPultDJ/mainwindow.cpp", "MU", null ],
-		[ "/Users/germanalbershteyn/MVCPultDJ/updater.cpp", "MU", null ]
+		[ "/Users/germanalbershteyn/MVCPultDJ/mainwindow.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
