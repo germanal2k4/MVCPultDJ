@@ -62,6 +62,14 @@ build CMakeFiles/DisplayBPMView.dir/displaybpmview.cpp.o: CXX_COMPILER__DisplayB
   OBJECT_DIR = CMakeFiles/DisplayBPMView.dir
   OBJECT_FILE_DIR = CMakeFiles/DisplayBPMView.dir
 
+build CMakeFiles/DisplayBPMView.dir/updater.cpp.o: CXX_COMPILER__DisplayBPMView_Debug /Users/germanalbershteyn/MVCPultDJ/updater.cpp || cmake_object_order_depends_target_DisplayBPMView
+  DEFINES = -DDisplayBPMView_EXPORTS -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/DisplayBPMView.dir/updater.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fPIC -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/DisplayBPMView_autogen/include -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/lib/QtCore.framework/Headers -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/DisplayBPMView.dir
+  OBJECT_FILE_DIR = CMakeFiles/DisplayBPMView.dir
+
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target DisplayBPMView
@@ -70,7 +78,7 @@ build CMakeFiles/DisplayBPMView.dir/displaybpmview.cpp.o: CXX_COMPILER__DisplayB
 #############################################
 # Link the shared library libDisplayBPMView.dylib
 
-build libDisplayBPMView.dylib: CXX_SHARED_LIBRARY_LINKER__DisplayBPMView_Debug CMakeFiles/DisplayBPMView.dir/DisplayBPMView_autogen/mocs_compilation.cpp.o CMakeFiles/DisplayBPMView.dir/displaybpmview.cpp.o | /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore || DisplayBPMView_autogen DisplayBPMView_autogen_timestamp_deps
+build libDisplayBPMView.dylib: CXX_SHARED_LIBRARY_LINKER__DisplayBPMView_Debug CMakeFiles/DisplayBPMView.dir/DisplayBPMView_autogen/mocs_compilation.cpp.o CMakeFiles/DisplayBPMView.dir/displaybpmview.cpp.o CMakeFiles/DisplayBPMView.dir/updater.cpp.o | /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore || DisplayBPMView_autogen DisplayBPMView_autogen_timestamp_deps
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5
   INSTALLNAME_DIR = @rpath/
   LANGUAGE_COMPILE_FLAGS = -g
@@ -109,6 +117,14 @@ build CMakeFiles/ConsoleBPMView.dir/consolebpmview.cpp.o: CXX_COMPILER__ConsoleB
   OBJECT_DIR = CMakeFiles/ConsoleBPMView.dir
   OBJECT_FILE_DIR = CMakeFiles/ConsoleBPMView.dir
 
+build CMakeFiles/ConsoleBPMView.dir/updater.cpp.o: CXX_COMPILER__ConsoleBPMView_Debug /Users/germanalbershteyn/MVCPultDJ/updater.cpp || cmake_object_order_depends_target_ConsoleBPMView
+  DEFINES = -DConsoleBPMView_EXPORTS -DQT_CORE_LIB
+  DEP_FILE = CMakeFiles/ConsoleBPMView.dir/updater.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5 -fPIC -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/Users/germanalbershteyn/MVCPultDJ/cmake-build-debug/ConsoleBPMView_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/ConsoleBPMView.dir
+  OBJECT_FILE_DIR = CMakeFiles/ConsoleBPMView.dir
+
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target ConsoleBPMView
@@ -117,7 +133,7 @@ build CMakeFiles/ConsoleBPMView.dir/consolebpmview.cpp.o: CXX_COMPILER__ConsoleB
 #############################################
 # Link the shared library libConsoleBPMView.dylib
 
-build libConsoleBPMView.dylib: CXX_SHARED_LIBRARY_LINKER__ConsoleBPMView_Debug CMakeFiles/ConsoleBPMView.dir/ConsoleBPMView_autogen/mocs_compilation.cpp.o CMakeFiles/ConsoleBPMView.dir/consolebpmview.cpp.o | /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore || ConsoleBPMView_autogen ConsoleBPMView_autogen_timestamp_deps
+build libConsoleBPMView.dylib: CXX_SHARED_LIBRARY_LINKER__ConsoleBPMView_Debug CMakeFiles/ConsoleBPMView.dir/ConsoleBPMView_autogen/mocs_compilation.cpp.o CMakeFiles/ConsoleBPMView.dir/consolebpmview.cpp.o CMakeFiles/ConsoleBPMView.dir/updater.cpp.o | /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore || ConsoleBPMView_autogen ConsoleBPMView_autogen_timestamp_deps
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.5
   INSTALLNAME_DIR = @rpath/
   LANGUAGE_COMPILE_FLAGS = -g

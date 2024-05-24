@@ -1,10 +1,13 @@
+#include <QPluginLoader>
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "bpmmodel.h"
-
 #include "consolebpmview.h"
 #include "controlbpmview.h"
 #include "displaybpmview.h"
+
+
+class Updater;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
@@ -15,14 +18,17 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow() { delete ui; }
 
 void MainWindow::on_pushButton_clicked() {
-//  auto consoleView = new ConsoleBPMView();
-//
-//  controller->setView(consoleView);
+    QPluginLoader loader("build/libConsoleBPMView.dylib");
+    QObject *plugin = loader.instance();
+    auto *updater = qobject_cast<Updater *>(plugin);
+    controller->setView(updater);
 }
 
 void MainWindow::on_pushButton_2_clicked() {
-//  auto display = new DisplayBPMView();
-//  controller->setView(display);
+    QPluginLoader loader("build/libDisplayBPMView.dylib");
+    QObject *plugin = loader.instance();
+    auto *updater = qobject_cast<Updater *>(plugin);
+    controller->setView(updater);
 }
 
 void MainWindow::on_comboBox_activated(int index) {
