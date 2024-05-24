@@ -389,6 +389,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/Users/germanalbershteyn/MVCPultDJ",
 		"/opt/homebrew/lib/QtCore.framework/Headers",
 		"/opt/homebrew/lib/QtCore.framework",
 		"/opt/homebrew/share/qt/mkspecs/macx-clang",

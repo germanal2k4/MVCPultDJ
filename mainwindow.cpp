@@ -20,14 +20,14 @@ MainWindow::~MainWindow() { delete ui; }
 void MainWindow::on_pushButton_clicked() {
     QPluginLoader loader("build/libConsoleBPMView.dylib");
     QObject *plugin = loader.instance();
-    auto *updater = qobject_cast<Updater *>(plugin);
+    auto *updater = qobject_cast<ConsoleBPMView *>(plugin);
     controller->setView(updater);
 }
 
 void MainWindow::on_pushButton_2_clicked() {
     QPluginLoader loader("build/libDisplayBPMView.dylib");
     QObject *plugin = loader.instance();
-    auto *updater = qobject_cast<Updater *>(plugin);
+    auto *updater = qobject_cast<DisplayBPMView *>(plugin);
     controller->setView(updater);
 }
 
