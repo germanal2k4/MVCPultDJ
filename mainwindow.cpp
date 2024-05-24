@@ -15,23 +15,23 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow() { delete ui; }
 
 void MainWindow::on_pushButton_clicked() {
-  auto consoleView = new ConsoleBPMView();
-
-  controller->setView(consoleView);
+//  auto consoleView = new ConsoleBPMView();
+//
+//  controller->setView(consoleView);
 }
 
 void MainWindow::on_pushButton_2_clicked() {
-  auto display = new DisplayBPMView();
-  controller->setView(display);
+//  auto display = new DisplayBPMView();
+//  controller->setView(display);
 }
 
 void MainWindow::on_comboBox_activated(int index) {
-  if (index == 0) {
-    auto display = new DisplayBPMView();
-    controller->setView(display);
-  }
-  if (index == 1) {
-    auto cli = new ConsoleBPMView();
-    controller->setView(cli);
-  }
+//  if (index == 0) {
+//    auto display = new DisplayBPMView();
+//    controller->setView(display);
+//  }
+//  if (index == 1) {
+//    auto cli = new ConsoleBPMView();
+//    controller->setView(cli);
+//  }
 }

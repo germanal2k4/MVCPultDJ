@@ -1,4 +1,4 @@
-#include "ControlBPMView.h"
+#include "controlbpmview.h"
 
 ControlBPMView::ControlBPMView(QWidget *parent) : QWidget(parent) {
   m_bpmInput = new QLineEdit(this);

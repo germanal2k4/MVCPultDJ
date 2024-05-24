@@ -22,11 +22,13 @@ add_library(DisplayBPMView SHARED
         displaybpmview.cpp
         displaybpmview.h
         updater.h
+        updater.cpp
         )
 add_library(ConsoleBPMView SHARED
         consolebpmview.cpp
         consolebpmview.h
         updater.h
+        updater.cpp
         )
 
 
